@@ -3,7 +3,7 @@
 The simplest way to get started with TDD and/or pairing is writing tests for "pure" functions. (See Glossary)
 
 ### Contrived Example
-Imagine a story needs to reject a GET /contacts?last-name={invalid-input} request to prevent unnecessary and potentially harmful queries of a database.  For this portion of the story we will develop a `validate_last_method` method that will be used by the Fast API route.  It will return a 400 (Bad Request) if this function returns False.
+Imagine a story needs to reject a GET /contacts?last-name={invalid-input} request to prevent unnecessary and potentially harmful queries of a database.  **For this portion of the story**, we will develop a `validate_last_name` method that will be used by the Fast API route. The route will return a 400 (Bad Request) if this function returns False.
 
 ### Pre-requisites
 * pytest installed
