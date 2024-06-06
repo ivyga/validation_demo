@@ -8,6 +8,18 @@ Imagine a story that requires rejecting a `GET /contacts?last-name={invalid-inpu
 
 **For this portion of the story**, we will develop a `validate_last_name` method that will be used by the FastAPI route. The route will return a `400` (Bad Request) if this function returns `False`.
 
+### "Acceptance Critieria"
+Function returns `False` where:
+1. Input is less than 3 characters
+2. Input starts with a hyphen
+3. Input ends with a hyphen
+4. Input contains consecutive hyphens
+5. Input contains characters OTHER than
+    * Upper case alphbetic
+    * Lower case alphabetic
+    * Apostrophe 
+    * Hyphen
+
 ### Pre-requisites
 * `pytest` installed
 * VSCode Live Share extension
