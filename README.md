@@ -1,25 +1,24 @@
 # Test Driven Development (TDD) Pairing Session
 
-The simplest way to get started with TDD and/or pairing is writing tests for "pure" functions. (See Glossary)
+The simplest way to get started with TDD and/or pairing is by writing tests for "pure" functions. (See [Glossary](#glossary))
 
 ### Contrived Example
-Imagine a story needs to reject a GET /contacts?last-name={invalid-input} request to prevent unnecessary and potentially harmful queries of a database.  **For this portion of the story**, we will develop a `validate_last_name` method that will be used by the Fast API route. The route will return a 400 (Bad Request) if this function returns False.
+
+Imagine a story that requires rejecting a `GET /contacts?last-name={invalid-input}` request to prevent unnecessary and potentially harmful queries of a database.
+
+**For this portion of the story**, we will develop a `validate_last_name` method that will be used by the FastAPI route. The route will return a `400` (Bad Request) if this function returns `False`.
 
 ### Pre-requisites
-* pytest installed
-* vscode live share extension
+* `pytest` installed
+* VSCode Live Share extension
 
-## Excercise
+## Exercise
 
-1. Developer "A" writes one test to cover one portion of the stories "Acceptance Critieria" (`test_validator.py`). Run `pytest` to confirm the test passes.
-
-1. Developer "B" makes the test pass by implementing code (`validator.py`). Run `pytest` to confirm the test passes.
-
-1. Developer "B" writes one test to cover one portion of the stories "Acceptance Critieria" (`test_validator.py`). Run `pytest` to confirm the test passes.
-
-1. Developer "A" makes the test pass by implementing code (`validator.py`). Run `pytest` to confirm the test passes.
-
-1. Repeat until all of the "Acceptance Critieria" is met.
+1. **Developer "A"** writes one test to cover one portion of the story's "Acceptance Criteria" (`test_validator.py`). Run `pytest` to confirm the test fails.
+2. **Developer "B"** makes the test pass by implementing code (`validator.py`). Run `pytest` to confirm the test passes.
+3. **Developer "B"** writes one test to cover one portion of the story's "Acceptance Criteria" (`test_validator.py`). Run `pytest` to confirm the test fails.
+4. **Developer "A"** makes the test pass by implementing code (`validator.py`). Run `pytest` to confirm the test passes.
+5. Repeat until all of the "Acceptance Criteria" is met.
 
 ### Glossary
 
