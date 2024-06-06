@@ -26,6 +26,8 @@ Function returns `False` where:
 
 ## Exercise
 
+Note: If you just want to see an example of how this excercise might go, see the `cheat` folder.
+
 1. **Developer "A"** writes one test to cover one portion of the story's "Acceptance Criteria" (`test_validator.py`). Run `pytest` to confirm the test fails.
 2. **Developer "B"** makes the test pass by implementing code (`validator.py`). Run `pytest` to confirm the test passes.
 3. **Developer "B"** writes one test to cover one portion of the story's "Acceptance Criteria" (`test_validator.py`). Run `pytest` to confirm the test fails.
